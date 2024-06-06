@@ -57,15 +57,15 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
     const alivemsg = `
-*🔰 OWNER* : ${s.OWNER_NAME}
-*🔰 MODE* : ${mode}
-*🔰 DATE* : ${date}
-*🔰 TIME* : ${temps}
+*👑 OWNER* : ${s.OWNER_NAME}
+*👑 MODE* : ${mode}
+*👑 DATE* : ${date}
+*👑 TIME* : ${temps}
 
  ${message}
  
  
- *🔰 GOLD MD IS ALIVE NOW 🔰*`
+ *👑 RUSHI MD IS ALIVE NOW 👑*`
 
  if (lien.match(/\.(mp4|gif)$/i)) {
     try {
@@ -96,7 +96,7 @@ else {
         if(!superUser) { repondre("Bot me koi alive msg set nahi") ; return};
 
       await   repondre("Agar apko bot me alive msg set karna hai to ese likho: .alive message;photo link");
-         repondre("*🔰 HI I AM GOLD MD 🔰*")
+         repondre("*👑 HI I AM RUSH MD 👑*")
      }
  } else {
 
