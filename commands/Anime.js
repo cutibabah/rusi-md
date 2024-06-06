@@ -4,14 +4,14 @@
 
 /** 
 
-🇫‌🇱‌🇦‌🇸‌🇭‌-🇲‌🇩‌ 
+RUSI-MD 
 
   𝗖𝗼𝗽𝘆𝗿𝗶𝗴𝗵𝘁 (𝗖) 2024.
  𝗟𝗶𝗰𝗲𝗻𝘀𝗲𝗱 𝘂𝗻𝗱𝗲𝗿 𝘁𝗵𝗲  𝗠𝗜𝗧 𝗟𝗶𝗰𝗲𝗻𝘀𝗲;
  𝗬𝗼𝘂 𝗺𝗮𝘆 𝗻𝗼𝘁 𝘂𝘀𝗲 𝘁𝗵𝗶𝘀 𝗳𝗶𝗹𝗲 𝗲𝘅𝗰𝗲𝗽𝘁 𝗶𝗻 𝗰𝗼𝗺𝗽𝗹𝗶𝗮𝗻𝗰𝗲 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲 𝗟𝗶𝗰𝗲𝗻𝘀𝗲.
  𝗜𝘁 𝗶𝘀 𝘀𝘂𝗽𝗽𝗹𝗶𝗲𝗱 𝗶𝗻 𝘁𝗵𝗲 𝗵𝗼𝗽𝗲 𝘁𝗵𝗮𝘁 𝗶𝘁 𝗺𝗮𝘆 𝗯𝗲 𝘂𝘀𝗲𝗳𝘂𝗹.
- * @𝗽𝗿𝗼𝗷𝗲𝗰𝘁_𝗻𝗮𝗺𝗲 : 𝗙𝗹𝗮𝘀𝗵 𝗠𝗗, 𝗮 𝘀𝗶𝗺𝗽𝗹𝗲 𝗮𝗻𝗱 𝗲𝗮𝘀𝘆 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 𝘂𝘀𝗲𝗿 𝗯𝗼𝘁 
- * @𝗼𝘄𝗻𝗲𝗿: 𝗙𝗿𝗮𝗻𝗰𝗲 𝗞𝗶𝗻𝗴 
+ * @𝗽𝗿𝗼𝗷𝗲𝗰𝘁_𝗻𝗮𝗺𝗲 : RUSI 𝗠𝗗, 𝗮 𝘀𝗶𝗺𝗽𝗹𝗲 𝗮𝗻𝗱 𝗲𝗮𝘀𝘆 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 𝘂𝘀𝗲𝗿 𝗯𝗼𝘁 
+ * @𝗼𝘄𝗻𝗲𝗿: RUSH  
  
  **/
 
@@ -27,7 +27,7 @@ const {Sticker ,StickerTypes}= require('wa-sticker-formatter');
 france({
   nomCom: "ranime",
   categorie: "Fun",
-  reaction: "🔰"
+  reaction: "🎗️"
 },
 async (origineMessage, zk, commandeOptions) => {
   const { repondre, ms } = commandeOptions;
@@ -46,7 +46,7 @@ async (origineMessage, zk, commandeOptions) => {
 
     //const texttraduit = await traduire(synopsis,{ to: 'fr' })
 
-    const message = `🔰 TITLE: ${title}\n🔰 EPISODE: ${episodes}\n🔰 STATUS: ${status}\n🔰 SYNOPSIS: ${synopsis}\n🔰 LINK: ${data.url}`;
+    const message = `🎗️ TITLE: ${title}\n🎗️ EPISODE: ${episodes}\n🎗️ STATUS: ${status}\n🎗️ SYNOPSIS: ${synopsis}\n🎗️ LINK: ${data.url}`;
     
     // Envoyer l'image et les informations
     zk.sendMessage(origineMessage, { image: { url: imageUrl }, caption: message }, { quoted: ms });
@@ -63,19 +63,19 @@ france({
   const { arg, repondre } = commandeOptions;
   
   if (!arg[0] || arg === "") {
-    repondre("Apko google se kisi chiz ki information chahye...?\n*Ese likho : .google GOLD MD github Repo Link*");
+    repondre("නිවැරදිව ලබ දෙන්න...?\n*Ese likho : .google RUSI MD github Repo Link*");
     return;
   }
 
   const google = require('google-it');
   try {
     const results = await google({ query: arg.join(" ") });
-    let msg = `GOLD MD GOOGLE SEARCHED FOR : ${arg}\n\n`;
+    let msg = `RUSI MD GOOGLE SEARCHED FOR : ${arg}\n\n`;
 
     for (let result of results) {
-      msg += `🔰 TITLE : ${result.title}\n`;
-      msg += `🔰 DESCRYPTION : ${result.snippet}\n`;
-      msg += `🔰 LINK : ${result.link}\n\n────────────────────────\n\n`;
+      msg += `🎗️ TITLE : ${result.title}\n`;
+      msg += `🎗️ DESCRYPTION : ${result.snippet}\n`;
+      msg += `🎗️ LINK : ${result.link}\n\n────────────────────────\n\n`;
     }
     
    // const trdmsg = await traduire(msg,{to : 'fr'})
@@ -92,7 +92,7 @@ france({
   const { arg, repondre , ms } = commandeOptions;
 
   if (!arg[0] || arg === "") {
-    repondre("Kisi bhi movie ka name likho");
+    repondre("name එක එයට අදල දමන්න");
     return;
   }
 
@@ -166,7 +166,7 @@ france({
       // Si la requête a réussi, envoyez l'image résultante
       
       let stickerMess = new Sticker(response.data.result, {
-        pack: FLASH-MD,
+        pack: RUSI-MD,
         type: StickerTypes.CROPPED,
         categories: ["🤩", "🎉"],
         id: "12345",
