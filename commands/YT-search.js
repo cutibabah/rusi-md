@@ -98,7 +98,7 @@ _*En cours de téléchargement...*_\n\n`
 
     fileStream.on('finish', () => {
       // Envoi du fichier vidéo en utilisant l'URL du fichier local
-      zk.sendMessage(origineMessage, { video: { url: `./${filename}` }, caption: "*MADE BY GOLD-MD*", gifPlayback: false }, { quoted: ms });
+      zk.sendMessage(origineMessage, { video: { url: `./${filename}` }, caption: "*MADE BY RUSI-MD*", gifPlayback: false }, { quoted: ms });
 
     });
 
