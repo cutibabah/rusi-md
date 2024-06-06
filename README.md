@@ -16,15 +16,6 @@
 
 ***
 
-# *_GET • [SESSION ID](https://gold-md-server-3-fda056d35afd.herokuapp.com) • WITH SERVER 2_*
-
-***
-
-# *_GET • [SESSION ID](https://gold-md-server-4-b864b9341803.herokuapp.com) • WITH SERVER 3_*
-
-***
-
-# *_GET • [SESSION ID](https://gold-md-server-5-27f7d00b74e1.herokuapp.com) • WITH SERVER 4_*
 
 ***
 
