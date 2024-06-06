@@ -16,27 +16,34 @@
 
 
 
+
+
+
+
+
+
+
+
+
 const { france } = require("../framework/france");
-const fancy = require("../commands/Styles");
+const moment = require("moment-timezone");
+const { default: axios } = require('axios');
+//const conf = require('../set');
 
-france({ nomCom: "fancy", categorie: "Fun", reaction: "⭐" }, async (dest, zk, commandeOptions) => {
-    const { arg, repondre, prefixe } = commandeOptions;
-    const id = arg[0]?.match(/\d+/)?.join('');
-    const text = arg.slice(1).join(" ");
 
-    try {
-        if (id === undefined || text === undefined) {
-            return await repondre(`\nExample : ${prefixe}fancy 10 RUSI-MD\n` + String.fromCharCode(8206).repeat(4001) + fancy.list('RUSI-MD', fancy));
-        }
+france({ nomCom: 'fancy',
+    desc: 'To check ping',
+    Categorie: 'General',
+    reaction: '🔰', 
+    fromMe: 'true', 
 
-        const selectedStyle = fancy[parseInt(id) - 1];
-        if (selectedStyle) {
-            return await repondre(fancy.apply(selectedStyle, text));
-        } else {
-            return await repondre('_Style introuvable :(_');
-        }
-    } catch (error) {
-        console.error(error);
-        return await repondre('_Une erreur s\'est produite :(_');
-    }
-});
+       
+  },
+  async (dest, zk, commandeOptions) => {
+    const { ms, arg, repondre } = commandeOptions;
+    const { start} = new Date().getTime()
+    return repondre('*🔰අපගේ🔰*\n ```' + 12 + '``` *|2x•group හා එක් වන්න https://whatsapp.com/channel/0029VacPdLXJ93wP6q0b962J|*') 
+    const { end } = new Date().getTime()
+    await zok.sendMessage('*🔰rusi🔰*\n ```' + (end - start) + '``` *|2x•SPEED|*')
+  }
+)
