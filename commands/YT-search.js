@@ -1,36 +1,15 @@
-
-/** 
-
- 𝗥𝗨𝗦𝗜 MD
-
-  𝗖𝗼𝗽𝘆𝗿𝗶𝗴𝗵𝘁 (𝗖) 2024.
- 𝗟𝗶𝗰𝗲𝗻𝘀𝗲𝗱 𝘂𝗻𝗱𝗲𝗿 𝘁𝗵𝗲  𝗠𝗜𝗧 𝗟𝗶𝗰𝗲𝗻𝘀𝗲;
- 𝗬𝗼𝘂 𝗺𝗮𝘆 𝗻𝗼𝘁 𝘂𝘀𝗲 𝘁𝗵𝗶𝘀 𝗳𝗶𝗹𝗲 𝗲𝘅𝗰𝗲𝗽𝘁 𝗶𝗻 𝗰𝗼𝗺𝗽𝗹𝗶𝗮𝗻𝗰𝗲 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲 𝗟𝗶𝗰𝗲𝗻𝘀𝗲.
- 𝗜𝘁 𝗶𝘀 𝘀𝘂𝗽𝗽𝗹𝗶𝗲𝗱 𝗶𝗻 𝘁𝗵𝗲 𝗵𝗼𝗽𝗲 𝘁𝗵𝗮𝘁 𝗶𝘁 𝗺𝗮𝘆 𝗯𝗲 𝘂𝘀𝗲𝗳𝘂𝗹.
- * @𝗽𝗿𝗼𝗷𝗲𝗰𝘁_𝗻𝗮𝗺𝗲 : 𝗥𝗨𝗦𝗜 𝗠𝗗, 𝗮 𝘀𝗶𝗺𝗽𝗹𝗲 𝗮𝗻𝗱 𝗲𝗮𝘀𝘆 𝗪𝗵𝗮𝘁𝘀𝗔𝗽𝗽 𝘂𝘀𝗲𝗿 𝗯𝗼𝘁 
- * @𝗼𝘄𝗻𝗲𝗿: RUSH 
- 
- **/
-
-
-
-
-
-
-
-
-const { france } = require("../framework/france");
+const { zokou } = require("../framework/zokou");
 const { getytlink, ytdwn } = require("../framework/ytdl-core");
 const yts = require("yt-search");
 const ytdl = require('ytdl-core');
 const fs = require('fs');
 
-france({ nomCom: "yts", categorie: "Search", reaction: "⭐" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "yts", categorie: "Search", reaction: "✋" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, arg } = commandeOptions;
   const query = arg.join(" ");
 
   if (!query[0]) {
-    repondre("Apko youtube ki kon si videos ke name or link ki list chahye..?");
+    repondre("what do you want");
     return;
   }
 
@@ -42,7 +21,7 @@ france({ nomCom: "yts", categorie: "Search", reaction: "⭐" }, async (dest, zk,
     for (let i = 0; i < 10; i++) {
       captions += `----------------\nTitle: ${resultat[i].title}\nTime : ${resultat[i].timestamp}\nUrl: ${resultat[i].url}\n`;
     }
-    captions += "\n======\n*MADE BY RUSI-MD*";
+    captions += "\n======\n*powered by RUSI-MD*";
 
     // repondre(captions)
     zk.sendMessage(dest, { image: { url: resultat[0].thumbnail }, caption: captions }, { quoted: ms });
@@ -51,15 +30,15 @@ france({ nomCom: "yts", categorie: "Search", reaction: "⭐" }, async (dest, zk,
   }
 });
 
-france({
-  nomCom: "ytv",
+zokou({
+  nomCom: "ytmp4",
   categorie: "Download",
-  reaction: "⭐"
+  reaction: "🎥"
 }, async (origineMessage, zk, commandeOptions) => {
   const { arg, ms, repondre } = commandeOptions;
 
   if (!arg[0]) {
-    repondre("Video download karne ke lie Mujhe youtube video ka link do");
+    repondre("insert a youtube link");
     return;
   }
 
@@ -98,7 +77,7 @@ _*En cours de téléchargement...*_\n\n`
 
     fileStream.on('finish', () => {
       // Envoi du fichier vidéo en utilisant l'URL du fichier local
-      zk.sendMessage(origineMessage, { video: { url: `./${filename}` }, caption: "*MADE BY RUSI-MD*", gifPlayback: false }, { quoted: ms });
+      zk.sendMessage(origineMessage, { video: { url: `./${filename}` }, caption: "Powered by *RUSI-MD*", gifPlayback: false }, { quoted: ms });
 
     });
 
@@ -113,15 +92,15 @@ _*En cours de téléchargement...*_\n\n`
   }
 });
 
-france({
-  nomCom: "yta",
+zokou({
+  nomCom: "ytmp3",
   categorie: "Download",
-  reaction: "⭐"
+  reaction: "💿"
 }, async (origineMessage, zk, commandeOptions) => {
   const { ms, repondre, arg } = commandeOptions;
 
   if (!arg[0]) {
-    repondre("Audio download karne ke lie Mujhe youtube video ka link do");
+    repondre("Insert a youtube link");
     return;
   }
 
