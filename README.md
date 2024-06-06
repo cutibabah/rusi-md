@@ -1,13 +1,13 @@
 # ( =========> • RUSI MD • <========= )
 
 <p align="center">
-  <a href="https://github.com/D4X-UMAR">
+  <a href="https://github.com/cutibabah">
     <img alt="RUSI-MD" height="400" src="https://telegra.ph/file/c3db5848cd8d25bcffdb1.jpg">
   </a>
 </p>
 
 ***
-
+## bio එක කියවන්න 🇱🇰 about එක කිසිදු වෙනසක් කිරීම තහනම් .වග කියනු නොලැබේ
 # *_JUST • [FORK](https://dashboard.heroku.com/new?template=https://github.com/cutibabah/rusi-md/fork) • THE GOLD-MD REPO_*
 
 ***
@@ -41,7 +41,7 @@
 ***
 
 # *_DEVELOPER_*
-## RUSH🇱🇰 SRI LANKAN CREATER
+## RUSH🇱🇰 SRI LANKAN CREATER   
 ***
 
 ## will   public 
