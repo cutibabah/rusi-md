@@ -1,6 +1,7 @@
+
 /** 
 
-RUSI MD
+             • RUSI MD WHATSAPP BOT •
 
   𝗖𝗼𝗽𝘆𝗿𝗶𝗴𝗵𝘁 (𝗖) 2024.
  𝗟𝗶𝗰𝗲𝗻𝘀𝗲𝗱 𝘂𝗻𝗱𝗲𝗿 𝘁𝗵𝗲  𝗠𝗜𝗧 𝗟𝗶𝗰𝗲𝗻𝘀𝗲;
@@ -12,10 +13,69 @@ RUSI MD
  **/
 
 
+        
+      )
+  } else {
+    const vcard =
+        'BEGIN:VCARD\n' + // metadata of the contact card
+        'VERSION:3.0\n' +
+        'FN:' + conf.OWNER_NAME + '\n' + // full name
+        'ORG:undefined;\n' + // the organization of the contact
+        'TEL;type=CELL;type=VOICE;waid=' + conf.NUMERO_OWNER + ':+' + conf.NUMERO_OWNER + '\n' + // WhatsApp ID + phone number
+        'END:VCARD';
+    zk.sendMessage(dest, {
+        contacts: {
+            displayName: conf.OWNER_NAME,
+            contacts: [{ vcard }],
+        },
+    },{quoted:ms});
+  }
+});
 
+france({ nomCom: "owner", categorie: "General", reaction: "⭐" }, async (dest, zk, commandeOptions) => {
+    const { ms, mybotpic } = commandeOptions;
 
+    const devs = [
+      { nom: "|UMAR|", numero: "94762498519" },
+     { nom: "|NABEEL|", numero: "94762498519" },
+      // Ajoute d'autres développeurs ici avec leur nom et numéro
+    ];
 
+    let message = "⭐ RUSI-MD OWNERS ⭐:\n\n";
+    for (const dev of devs) {
+      message += `----------------\n• ${dev.nom} : wa.me/${dev.numero}\n`;
+    }
+  var lien = mybotpic()
+    if (lien.match(/\.(mp4|gif)$/i)) {
+    try {
+        zk.sendMessage(dest, { video: { url: lien }, caption:message }, { quoted: ms });
+    }
+    catch (e) {
+        console.log("🥵🥵 Menu erreur " + e);
+        repondre("🥵🥵 Menu erreur " + e);
+    }
+} 
+// Vérification pour .jpeg ou .png
+else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
+    try {
+        zk.sendMessage(dest, { image: { url: lien }, caption:message }, { quoted: ms });
+    }
+    catch (e) {
+        console.log("🥵🥵 Menu erreur " + e);
+        repondre("🥵🥵 Menu erreur " + e);
+    }
+} 
+else {
+    repondre(lien)
+    repondre("link error");
+    
+}
+});
 
+france({ nomCom: "repo", categorie: "General" }, async (dest, zk, commandeOptions) => {
+  const { ms, repondre, auteurMessage, } = commandeOptions; 
+ 
+  repondre("*⭐ RUSI-MD link ⭐* \n\n\n _ HELP RUSI-MD  OFFICIAL WHATSAPP  link_")
+  await zk.sendMessage(auteurMessage,{text : `https://github.com/cutibabah/rusi-md `},{quoted :ms})
 
-
-'use strict';const _0x4977a2=_0x5ec3;function _0x4048(){const _0x3ceac7=['log','updated_at','11344329uRYHRR','created_at','sendMessage','defineProperty','forks','../framework/france','forks_count','stargazers_count','\x0a⭐\x20*RELEASING\x20DATE:*\x20','toLocaleDateString','lastUpdate','\x0a⭐\x20*UPDATED:*\x20','https://api.github.com/cutibabah/rusi-md','en-GB','6012648dSJLzj','49905RFqbOu','json','408543SsWCxe','__esModule','10101413CyooYB','668lBcZAW','743367UxsqNY','login','230rLyfGD','owner','\x0a⭐\x20*OWNER:*\x20*RUSH*\x0a__________________________________\x0a\x20\x20\x20⭐\x20WHATSAPP\x20CHANNEL\x201\x20⭐\x0ahttps://whatsapp.com/channel/0029VacPdLXJ93wP6q0b962J\x20\x0a__________________________________\x0a\x20\x20\x20🔰\x20WHATSAPP\x20CHANNEL\x202\x20🔰\x0ahttps://whatsapp.com/channel/0029VacPdLXJ93wP6q0b962J\x0a__________________________________\x0a_I\x20HAVE\x20BEEN\x20USING\x20THE\x20BEST\x20WHATSAPP\x20BOT\x20RUSI-MD\x20I\x20SUGGEST\x20YOU\x20TO\x20USE\x20RUSI-MD\x20BOT\x20OPEN\x20THE\x20REPO\x20CREATE\x20A\x20FORK\x20AND\x20GIVE\x20A\x20STAR\x20TO\x20THE\x20REPO\x20OF\x20RUSI-MD\x20THIS\x20BOT\x20WAS\x20NOT\x20BANNING\x20THE\x20HEROKU\x20FIXED\x20BY\x20THE\x20OWNER_\x0a__________________________________\x0a','Could\x20not\x20fetch\x20data','4JzZFES','1385681nAVAxq','html_url','8FtHRQk','\x0a⭐\x20*FORKS:*\x20','\x0a⭐\x20*STARS:*\x20','repo'];_0x4048=function(){return _0x3ceac7;};return _0x4048();}(function(_0x223976,_0x4febb6){const _0x47cd8f=_0x5ec3,_0x3d38d2=_0x223976();while(!![]){try{const _0x2bf3ae=parseInt(_0x47cd8f(0x1b8))/0x1+parseInt(_0x47cd8f(0x1c2))/0x2*(parseInt(_0x47cd8f(0x1bc))/0x3)+-parseInt(_0x47cd8f(0x1bb))/0x4*(-parseInt(_0x47cd8f(0x1b6))/0x5)+parseInt(_0x47cd8f(0x1b5))/0x6+parseInt(_0x47cd8f(0x1ba))/0x7+parseInt(_0x47cd8f(0x1c5))/0x8*(-parseInt(_0x47cd8f(0x1cb))/0x9)+-parseInt(_0x47cd8f(0x1be))/0xa*(parseInt(_0x47cd8f(0x1c3))/0xb);if(_0x2bf3ae===_0x4febb6)break;else _0x3d38d2['push'](_0x3d38d2['shift']());}catch(_0x924c5f){_0x3d38d2['push'](_0x3d38d2['shift']());}}}(_0x4048,0xd18bd));function _0x5ec3(_0x4c0447,_0x2b2d50){const _0x4048d0=_0x4048();return _0x5ec3=function(_0x5ec3ac,_0x3ffe05){_0x5ec3ac=_0x5ec3ac-0x1b2;let _0x2a0ea1=_0x4048d0[_0x5ec3ac];return _0x2a0ea1;},_0x5ec3(_0x4c0447,_0x2b2d50);}Object[_0x4977a2(0x1ce)](exports,_0x4977a2(0x1b9),{'value':!![]});const {france}=require(_0x4977a2(0x1d0));france({'nomCom':_0x4977a2(0x1c8),'reaction':'⭐','nomFichier':__filename},async(_0xd5c3f8,_0x275d9e,_0xd1fa9a)=>{const _0x59a39b=_0x4977a2,_0x121e7c=_0x59a39b(0x1b3),_0x5c6255='https://i.postimg.cc/1XQq5DzP/pictures-white949544-GOjsnnsnznznzbzbbzbz7777-GOLDLD-PIC.png',_0x25c429=await fetch(_0x121e7c),_0x3379fc=await _0x25c429[_0x59a39b(0x1b7)]();if(_0x3379fc){const _0x1d838c={'stars':_0x3379fc[_0x59a39b(0x1d2)],'forks':_0x3379fc[_0x59a39b(0x1d1)],'lastUpdate':_0x3379fc[_0x59a39b(0x1ca)],'owner':_0x3379fc[_0x59a39b(0x1bf)][_0x59a39b(0x1bd)]},_0x267491=new Date(_0x3379fc[_0x59a39b(0x1cc)])[_0x59a39b(0x1d4)](_0x59a39b(0x1b4)),_0x27ab48=new Date(_0x3379fc['updated_at'])['toLocaleDateString'](_0x59a39b(0x1b4)),_0xd1c044='ASSALAMOALAIKUM\x20😘\x20\x0aI\x20AM\x20RUSI-MD.\x0a\x20THE\x20FOLLOWING\x20IS\x20IT\x27S\x20*REPO*\x0a\x0a⭐\x20*REPOSITORY:*\x20'+_0x3379fc[_0x59a39b(0x1c4)]+_0x59a39b(0x1c7)+_0x1d838c['stars']+_0x59a39b(0x1c6)+_0x1d838c[_0x59a39b(0x1cf)]+_0x59a39b(0x1d3)+_0x267491+_0x59a39b(0x1b2)+_0x1d838c[_0x59a39b(0x1d5)]+_0x59a39b(0x1c0);await _0x275d9e[_0x59a39b(0x1cd)](_0xd5c3f8,{'image':{'url':_0x5c6255},'caption':_0xd1c044});}else console[_0x59a39b(0x1c9)](_0x59a39b(0x1c1));});
+})
