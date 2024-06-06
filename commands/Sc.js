@@ -75,7 +75,7 @@ else {
 france({ nomCom: "repo", categorie: "General" }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, auteurMessage, } = commandeOptions; 
  
-  repondre("*⭐ RUSI-MD link ⭐* \n\n\n _ HELP RUSI-MD  OFFICIAL WHATSAPP  link_")
+  repondre("*⭐ RUSI-MD link ⭐* \n\n\n _ HELP RUSI-MD  OFFICIAL🇱🇰https://github.com/cutibabah/rusi-md 🇱🇰WHATSAPP  link_")
   await zk.sendMessage(auteurMessage,{text : `https://github.com/cutibabah/rusi-md `},{quoted :ms})
 
 })
