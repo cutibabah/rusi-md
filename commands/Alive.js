@@ -65,7 +65,7 @@ const date = moment().format('DD/MM/YYYY');
  ${message}
  
  
- *👑 RUSHI MD IS ALIVE NOW 👑*`
+ *👑 RUSI MD IS ALIVE NOW 👑*`
 
  if (lien.match(/\.(mp4|gif)$/i)) {
     try {
@@ -93,14 +93,14 @@ else {
 }
 
     } else {
-        if(!superUser) { repondre("Bot me koi alive msg set nahi") ; return};
+        if(!superUser) { repondre("Bot ගේ alive maseege එක add කරන්න ") ; return};
 
-      await   repondre("Agar apko bot me alive msg set karna hai to ese likho: .alive message;photo link");
-         repondre("*👑 HI I AM RUSH MD 👑*")
+      await   repondre("bot ගේ alive massege add කරන්න 🎗️: .alive message;photo link");
+         repondre("*👑 HI I AM RUSI MD 👑*")
      }
  } else {
 
-    if(!superUser) { repondre ("Ap alive msg edit nahi kar sakte") ; return};
+    if(!superUser) { repondre ("හරියට දන්න🎗️") ; return};
 
   
     const texte = arg.join(' ').split(';')[0];
@@ -110,7 +110,7 @@ else {
     
 await addOrUpdateDataInAlive(texte , tlien)
 
-repondre('New alive msg set ho gaya hai')
+repondre('New alive massege 🎗️ දැන් alive massege එක ⭐ refresh වුනා creater by rush 🇱🇰')
 
 }
     });
