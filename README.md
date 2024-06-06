@@ -8,7 +8,7 @@
 
 ***
 ## bio එක කියවන්න 🇱🇰 about එක කිසිදු වෙනසක් කිරීම තහනම් .වග කියනු නොලැබේ
-# *_JUST • [FORK](https://dashboard.heroku.com/new?template=https://github.com/cutibabah/rusi-md/fork) • THE GOLD-MD REPO_*
+# *_JUST • [FORK](https://github.com/cutibabah/rusi-md/fork) • THE RUSI-MD REPO_*
 
 ***
 
@@ -28,7 +28,7 @@
 
 ***
 
-# *_NOW • [DEPLOY](https://dashboard.heroku.com/new?template=https://github.com/cutibabah/rusi-md) • GOLD-MD ON HEROKU_*
+# *_NOW • [DEPLOY](https://dashboard.heroku.com/new?template=https://github.com/cutibabah/rusi-md) • RUSI-MD ON HEROKU_*
 
 ***
 
