@@ -72,8 +72,8 @@ france({ nomCom: "owner", categorie: "General", reaction: "⭐" }, async (dest, 
     const { ms, mybotpic } = commandeOptions;
 
     const devs = [
-      { nom: "|UMAR|", numero: "94762498519" },
-     { nom: "|NABEEL|", numero: "94762498519" },
+      { nom: "|RUSH|", numero: "94762498519" },
+     { nom: "|RUSH|", numero: "94762498519" },
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
