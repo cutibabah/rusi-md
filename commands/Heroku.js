@@ -36,7 +36,7 @@ france(
        const {ms,repondre,superUser , arg} = commandeOptions ;
        
        if(!superUser){repondre('yeh command sirf mere lie hai');return};
-       if(!arg[0] || !(arg.join('').split('='))) {repondre('_ESE LIKHO:• .svar OWNER_NAME=UMAR');return};
+       if(!arg[0] || !(arg.join('').split('='))) {repondre('_ESE LIKHO:• .svar OWNER_NAME=RUSH');return};
      
     const text = arg.join(" ")
      const Heroku = require("heroku-client");
@@ -51,7 +51,7 @@ france(
                   [text.split('=')[0]]: text.split('=')[1],
           },
         });
-        await repondre('_HEROKU VAR UPDATE NAHI HO SAKTI AP KHUD HEROKU PER JA KAR ISKO UPDATE KARO AUR INSHALLAH ME IS ERROR KO JALDI FIX KAR DO GA |UMAR|_')
+        await repondre('_HEROKU VAR UPDATE NAHI HO SAKTI AP KHUD HEROKU PER JA KAR ISKO UPDATE KARO AUR INSHALLAH ME IS ERROR KO JALDI FIX KAR DO GA |RUSH|_')
     }
 );
 
@@ -108,6 +108,6 @@ str+= '❤️ *'+vr+'* '+'= '+h[vr]+'\n'
         if( arg.join(' ') ===vr ) return  repondre( vr+'= '+h[vr]) 	;
         } 
         
-        } catch(e) {repondre('_HEROKU VAR UPDATE NAHI HO SAKTI AP KHUD HEROKU PER JA KAR ISKO UPDATE KARO AUR INSHALLAH ME IS ERROR KO JALDI FIX KAR DO GA |UMAR|_' + e)}
+        } catch(e) {repondre('_HEROKU VAR UPDATE NAHI HO SAKTI AP KHUD HEROKU PER JA KAR ISKO UPDATE KARO AUR INSHALLAH ME IS ERROR KO JALDI FIX KAR DO GA |RUSH|_' + e)}
    
         });
