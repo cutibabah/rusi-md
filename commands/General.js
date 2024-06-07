@@ -73,7 +73,7 @@ france({ nomCom: "owner", categorie: "General", reaction: "⭐" }, async (dest, 
 
     const devs = [
       { nom: "|RUSH|", numero: "94762498519" },
-     { nom: "|RUSH|", numero: "94762498519" },
+     { nom: "|DESING|", numero: "94762498519" },
       // Ajoute d'autres développeurs ici avec leur nom et numéro
     ];
 
